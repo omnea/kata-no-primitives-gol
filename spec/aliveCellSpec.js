@@ -11,4 +11,8 @@ describe("AliveCell", function() {
 
   });
 
+  it('should say its alive', function() {
+      expect(aliveCell.alive()).toBeTruthy();
+  });
+
 });

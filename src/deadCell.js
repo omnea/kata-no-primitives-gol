@@ -6,4 +6,8 @@ class DeadCell extends Cell {
 		super();
 	}
 
+    dead(){
+        return this instanceof DeadCell;
+    }
+
 }
