@@ -40,3 +40,4 @@ You should write a program that can evolve the cells, and will output a similar 
 
   1. Arrays, Objects and Classes are allowed
   2. There is no limit on how many dimensions the universe have
+  3. You can run the tests just reloading the webpage. Just open SpecRunner.html in the browser
