@@ -10,12 +10,12 @@ describe("Cell", () => {
 	});
 
 	it("Should be alive", () => {
-		cell.setType(new Alive());
+		cell.setState(new Alive());
 		expect(cell.state instanceof Alive).toEqual(true);
 	});
 
 	it("Should be dead", () => {
-		cell.setType(new Dead());
+		cell.setState(new Dead());
 		expect(cell.state instanceof Dead).toEqual(true);
 	});
 
