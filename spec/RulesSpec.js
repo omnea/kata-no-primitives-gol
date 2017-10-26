@@ -17,7 +17,7 @@ describe("Rules", () => {
 		expect(rules instanceof Rules).toEqual(true);
 	});
 
-	it("Will be dead if it has less than 2 alive neighbors", () => {
+	it("Position Will be dead if it has less than 2 alive neighbors", () => {
 		const position = new Position();
 
 		position.setCell(aliveCell);
@@ -31,7 +31,7 @@ describe("Rules", () => {
 		expect(rules.willBeAlive(position)).toEqual(false);
 	});
 
-	it("Will be dead if it has more than 3 alive neighbors", () => {
+	it("Position Will be dead if it has more than 3 alive neighbors", () => {
 		const position = new Position();
 
 		position.setCell(aliveCell);
@@ -45,7 +45,7 @@ describe("Rules", () => {
 		expect(rules.willBeAlive(position)).toEqual(false);
 	});
 
-	it("Will be alive if it has 2 or 3 alive neighbors", () => {
+	it("Position Will be alive if it has 2 or 3 alive neighbors", () => {
 		const position = new Position();
 
 		position.setCell(aliveCell);
@@ -67,7 +67,7 @@ describe("Rules", () => {
 		expect(rules.willBeAlive(position)).toEqual(true);
 	});
 
-	it("Will be alive if it is dead and has 3 alive neighbors", () => {
+	it("Position Will be alive if it is dead and has 3 alive neighbors", () => {
 		const position = new Position();
 
 		position.setCell(deadCell);
