@@ -7,7 +7,15 @@ class Cell {
         this.neighbours.push(cell);
     }
 
-    countAliveNeighbours() {
-        return this.neighbours.filter(cell => cell instanceof LiveCell).length;
+    getAliveNeighbours() {
+        return this.neighbours.filter(cell => cell instanceof LiveCell);
+    }
+
+    getDeadNeighbours() {
+        return this.neighbours.filter(cell => cell instanceof DeadCell);
+    }
+
+    survives() {
+        
     }
 }

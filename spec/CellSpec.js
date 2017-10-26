@@ -36,10 +36,10 @@ describe("Cell", function() {
     cell.addNeighbour(otherCell1);
     cell.addNeighbour(otherCell2);
     cell.addNeighbour(otherCell3);
-    expect(cell.countAliveNeighbours()).toBe(3);
+    expect(cell.getAliveNeighbours().length).toBe(3);
   });
 
-  /*it("should know how many dead neighbours it has", function() {
+  it("should know how many dead neighbours it has", function() {
     let cell = new LiveCell();
     let otherCell1 = new DeadCell();
     let otherCell2 = new DeadCell();
@@ -47,16 +47,16 @@ describe("Cell", function() {
     cell.addNeighbour(otherCell1);
     cell.addNeighbour(otherCell2);
     cell.addNeighbour(otherCell3);
-    expect(cell.countAliveNeighbours()).toBe(3);
-  });*/
+    expect(cell.getDeadNeighbours().length).toBe(3);
+  });
 
   /*it("shouldn't survive next generation", function() {
     let cell = new LiveCell();
     let otherCell = new LiveCell();
     cell.addNeighbour(otherCell);
-    otherCell.addNeighbour(cell);
-    expect(cell.neighbours.length).toBe(1);
-  });*/
+    expect(cell.survives()).toBe(typeof LiveCell);
+  });
+*/
 });
 
 /*Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
