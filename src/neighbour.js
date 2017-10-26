@@ -9,4 +9,7 @@ class Neighbour {
     hasNeighbours(){
         return this.neighbours.length;
     }
+    add(cell){
+        this.neighbours.push(cell);
+    }
 }
