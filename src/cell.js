@@ -2,6 +2,7 @@
 
 class Cell {
 
-	constructor(){}
+	constructor(){
+	}
 
 }
