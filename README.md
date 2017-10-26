@@ -27,6 +27,7 @@ You should write a program that can evolve the cells, and will output a similar 
   - Have fun, the important here is not to finish or to do the best implementation, but team work and learn
   - This is a safe environment for experimenting crazy ideas and chat with other about it.
   - No opinion is bad, we are here for learning :D
+  - You can ask to other team about how Jasmine works. David can help you. Please, don't use time in figuring out how Jasmine work, asking is easier and faster.
 
 ## Restrictions
 
