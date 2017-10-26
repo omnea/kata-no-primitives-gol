@@ -1,0 +1,1 @@
+# kata-no-primitives-gol
